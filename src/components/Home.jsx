@@ -34,6 +34,9 @@ const Home = () => {
     { id: 9, label: "Github Actions", path: "/githubActions" },
     { id: 10, label: "Docker", path: "/docker" },
     { id: 11, label: "Markdown", path: "/markdown" },
+    { id: 12, label: "HTTP Status Code", path: "/httpStatusCode" },
+    { id: 13, label: "ASCII Code", path: "/ascii" },
+    { id: 13, label: "MIME types", path: "/mime" },
   ];
 
   return (

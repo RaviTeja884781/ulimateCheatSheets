@@ -11,6 +11,14 @@ import githubCli from "../data/toolKit/githubCli";
 import githubAction from "../data/toolKit/githubAction";
 import docker from "../data/Programming/docker";
 import markdown from "../data/Programming/markdown";
+import httpStatusCodes from "../data/other/httpStatusCode";
+import AsciiTable from "../components/AsciiTable";
+import ascii from "../data/other/ascii";
+import MimeTable from "../components/MimeTable";
+import mime from "../data/other/mime"
+const HttpStatusCodes = React.lazy(() =>
+  import("../components/HttpStatusCodes")
+);
 
 const Viewer = React.lazy(() => import("../components/Viewer"));
 
@@ -37,6 +45,17 @@ const components = [
     path,
     component: <Viewer data={dataMap[path]} />,
   })),
+  {
+    path: "/httpStatusCode",
+    component: <HttpStatusCodes httpStatusCodes={httpStatusCodes} />,
+  },
+  {
+    path: "/ascii",
+    component: <AsciiTable asciiData={ascii} />,
+  },  {
+    path: "/mime",
+    component: <MimeTable mimeData={mime} />,
+  },
 ];
 
 export default components;
