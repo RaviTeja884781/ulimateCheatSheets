@@ -1,0 +1,13 @@
+.codeMirror {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.codeMirror :global(.cm-content) {
+  padding: 10px;
+}
+
+.codeMirror :global(.cm-line) {
+  padding: 2px;
+}
